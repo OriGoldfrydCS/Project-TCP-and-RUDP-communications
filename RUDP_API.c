@@ -79,7 +79,7 @@ int rudp_connect(int sock, const struct sockaddr_in *server_addr)
             return -1;
         }
 
-        // Check if the received packet is SYN-ACK by its flag
+        // Check if the received packet is SYN-ACK by its flags
         if (syn_ack_packet.flags & ACK)
         {
             print_time("SYN-ACK received from Receiver\n");

@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
     int isRunning = 1;                              // A flag for exiting after FIN has sent
     
 
-    // Main loop for run made by the Sender
+    // Main loop for "runs" made by the Sender
     while (isRunning && runs < MAX_RUNS)
     {
         RUDP_Header recv_packet;            // Struct for received packet header
@@ -182,7 +182,6 @@ int main(int argc, char *argv[])
                     }
                 }
                 fwrite(((char*)recv_packet) + sizeof(RUDP_Header), 1, bytes_received - sizeof(RUDP_Header), file); 
-                // fwrite((recv_packet + sizeof(recv_packet)), 1, bytes_received - sizeof(RUDP_Header), file);   // Write the data to the file (only the payload)
                 runDataReceived += bytes_received - sizeof(RUDP_Header);                    // Update the run data received counter
                 segmentNumber++;                                                            // Increment segment number for the next loop iteration
             }

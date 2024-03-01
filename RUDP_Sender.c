@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
     
     int isSender = 1;                       // A flag to mark the Sender (used for sending FIN at the end of the connection)
 
-    // Main loop for sending up to MAX_RUNS of data transmissions to the Receiver
+    // Main loop for sending up to MAX_RUNS of data transmissions to Receiver
     while(runs < MAX_RUNS)
     {
         int totalSegmentsSent = 0;      // Initialize total segments sent counter

@@ -110,6 +110,7 @@ int main(int argc, char *argv[])
     char decision = 'y'; 
     int runs = 1;
 
+    // Main loop for sendings data
     while(decision == 'y' || decision == 'Y')
     {
         total_bytes_sent = 0; 
@@ -133,6 +134,7 @@ int main(int argc, char *argv[])
 
         printf("----------------- run #%d ------------------\n", runs);
 
+        // Secondary loop to handle sending all data as segments
         while ((bytes_read = fread(buffer, 1, sizeof(buffer), file)) > 0) 
         {
 

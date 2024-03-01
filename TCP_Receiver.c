@@ -161,7 +161,7 @@ int main(int argc, char *argv[])
     int runs = 1;                                       // Counter for the number of receive cycles
     bool exitFlag = false;                              // A flag to indicate if EXIT command is received
 
-    // Main loop for receiving up to MAX_RUNS of data transmissions from the Sender
+    // Main loop for receiving up to MAX_RUNS of data transmissions from Sender
     while (!exitFlag)
     {   
         // Check if reallocation in needed

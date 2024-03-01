@@ -48,7 +48,7 @@ long time_diff(struct timeval start, struct timeval end);
 void save_data_as_txt(const char *data, int size, int run_number);
 void print_statistics(double *run_times, double *run_speeds, int runs, int total_data);
 
-// Auxiliary functions declaration
+// Auxiliary functions declarations
 int compare_files(const char *file1, const char *file2);
 void print_time(const char *format, ...);
 
