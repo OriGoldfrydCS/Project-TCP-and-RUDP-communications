@@ -12,7 +12,7 @@ TCP is a widely used, connection-oriented protocol designed to provide reliable,
 - **Error Checking**: Uses checksums to detect errors in transmitted packets.
 
 ### Reliable User Datagram Protocol (RUDP)
-RUDP is an extension of the User Datagram Protocol (UDP) that introduces mechanisms to provide reliable data transmission over an unreliable network. UDP is a connectionless protocol, meaning it does not guarantee that packets will be delivered, arrive in order, or be error-free. RUDP overcomes these limitations by adding reliability features, similar to TCP, while still maintaining UDP’s lightweight nature. Some of the key features of RUDP include:
+RUDP is an extension of the User Datagram Protocol (UDP) that introduces mechanisms to provide reliable data transmission. UDP is a connectionless protocol, meaning it does not guarantee that packets will be delivered, arrive in order, or be error-free. RUDP overcomes these limitations by adding reliability features, similar to TCP, while still maintaining UDP’s lightweight nature. Some of the key features of RUDP include:
 
 - **Packet Acknowledgment (ACK)**: The receiver sends an acknowledgment (ACK) for each successfully received packet. If the sender does not receive an ACK within a specified timeout period, it retransmits the packet.
 - **Retransmissions**: RUDP handles packet loss by retransmitting packets if an ACK is not received within the timeout window.
